@@ -1,3 +1,116 @@
 <!doctype html>
 <html>
+	<head>
+		<title>Ganja Farmer</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="keywords" content="html5 game canvas css3 dag einar monsen ntnu opera internship ganja farmer" /> 
+		<meta name="description" content="An HTML5 web implementation of the game Ganja Farmer." />
+		<meta name="author" content="http://www.google.com/profiles/monsen.dag" />  
+		<meta http-equiv="content-language" content="EN" />
+		<meta name="robots" content="all" />
+		<link rel="icon" type="image/x-icon" href="gfx/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Reenie+Beanie:regular&amp;subset=latin" />
+		<link rel="stylesheet" type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/trontastic/jquery-ui.css" />
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<script type="text/javascript" src="http://www.google-analytics.com/ga.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="scripts/jquery.hashchange.min.js"></script>
+		<script type="text/javascript" src="scripts/jquery.blockUI.js"></script>
+		<script type="text/javascript" src="game/img.js"></script>
+		<script type="text/javascript" src="game/sound.js"></script>
+		<script type="text/javascript" src="game/sprite.js"></script>
+		<script type="text/javascript" src="game/weed.js"></script>
+		<script type="text/javascript" src="game/farmer.js"></script>
+		<script type="text/javascript" src="game/solider.js"></script>
+		<script type="text/javascript" src="game/bullet.js"></script>
+		<script type="text/javascript" src="game/game.js"></script>
+		<script type="text/javascript" src="scripts/main.js"></script>
+	</head>
+	<body>
+		<section id="wrapper">
+			<header>
+				<hgroup>
+					<h1><span class="h_01">G</span><span class="h_02">a</span><span class="h_03">n</span><span class="h_04">j</span><span class="h_05">a</span><span class="h_06"> F</span><span class="h_07">a</span><span class="h_08">r</span><span class="h_09">m</span><span class="h_10">e</span><span class="h_11">r</span></h1>
+				</hgroup>
+			</header>
+			<menu>
+				<div id="menu">
+					<ul>
+						<li><a href="#play">PLAY!</a></li>
+						<li><a href="#about">ABOUT</a></li>
+					</ul>
+				</div>
+				<div>
+				   	<div id="stats">
+						SCORE<span id="score">0</span>
+						CROPS LEFT<span id="lives">0</span>
+					</div>
+					<div id="controls">
+						<input id="volume" type="range" min="0" max="100" step="1" />
+				   		<div id="soundtoggle">
+							<input type="radio" id="mutesound" name="radio" /><label for="mutesound">Off</label>
+							<input type="radio" id="unmutesound" name="radio" checked="checked" /><label for="unmutesound">On</label>
+						</div>
+					</div>
+				</div>
+			</menu>
+			<section>
+				<section id="play">
+			  		<canvas id="gameCanvas" width="750" height="450" style="cursor:crosshair;">
+		      			Your browser does not support the canvas element,
+		      			I suggest you download and install <a href="http://www.opera.com">Opera</a>.
+		      		</canvas>	
+					<canvas id="calcCanvas" width="200" height="200" style="display:none;"></canvas>
+				</section>
+				<section id="about" style="display:none;">
+					<h1>HTML5 based 2d game</h1>
+					<p>
+						This game was made as my contribution to the Opera Software international internship competition. <a href="http://my.opera.com/chooseopera/blog/abakus-winners">Which i won :)</a>
+					</p>
+					<p>The objective is to defend your crops from the attacking forces. 
+						They are attacking from above, and in great numbers. 
+						For each 30 kills, their rate of attack will increase. When your 26 crops are burned out, the game is over.
+						<h2>A number of technologies are used</h2>
+						<ul>
+							<li>CSS3 Selectors</li>
+							<li>HTML5 Canvas element</li>
+							<li>HTML5 Audio</li>
+							<li>HTML5 Localstorage</li>	
+						</ul>
+					<p>
+						The game has been tested, and should work well in the latest version of the following browsers.
+						<span class="browsers">
+							<img src="gfx/icons/opera.png" alt="opera" />
+							<img src="gfx/icons/chrome.png" alt="chrome" />
+							<img src="gfx/icons/firefox.png" alt="firefox" />
+							<img src="gfx/icons/safari.png" alt="safari" />
+						</span>
+					</p>
+					<p>
+						If you were to find a bug, or just want to comment on the project, please contact me at one of the links below.
+					</p>
+					<p class="sign">
+					- Dag Einar Monsen
+					</p>
+				</section>
+			</section>
+			<footer>
+				<p>
+					<a href="http://www.facebook.com/monsen.dag">
+						<img src="gfx/icons/social_facebook.png" alt="Facebook" />
+					</a>
+					<a href="http://www.google.com/profiles/monsen.dag">
+						<img src="gfx/icons/social_google.png" alt="Google" />
+					</a>
+					<a href="http://twitter.com/monsendag">
+						<img src="gfx/icons/social_twitter.png" alt="Twitter" />
+					</a>
+					<a href="http://www.linkedin.com/in/monsen">
+						<img src="gfx/icons/social_linked_in.png" alt="LinkedIn" />		
+					</a>
+				</p>
+			</footer>
+		</section>
+	</body>
 </html>
